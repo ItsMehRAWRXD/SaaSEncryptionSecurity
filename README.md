@@ -1,96 +1,137 @@
-<!-- markdownlint-disable MD033 MD041 -->
-<a href="https://arcjet.com" target="_arcjet-home">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://arcjet.com/logo/arcjet-dark-lockup-voyage-horizontal.svg">
-    <img src="https://arcjet.com/logo/arcjet-light-lockup-voyage-horizontal.svg" alt="Arcjet Logo" height="128" width="auto">
-  </picture>
-</a>
+# SaaS Encryption Security + π-Engine
 
-[![Deploy with Vercel][vercel_button]][vercel_deploy]
-&nbsp; &nbsp;
-[![Deploy to Netlify][netlify_button]][netlify_deploy]
+Enterprise-grade security templates and multi-language code execution platform.
 
-# Arcjet example app
+## 🚀 Features
 
-[Arcjet](https://arcjet.com) helps developers protect their apps in just a few
-lines of code. Bot detection. Rate limiting. Email validation. Attack
-protection. Data redaction. A developer-first approach to security.
+### Security Templates
+- **Advanced Stub Generation** - C++, Python, JavaScript templates
+- **Anti-Analysis Techniques** - Anti-debug, anti-VM, anti-sandbox
+- **Cryptographic Engines** - AES, XOR, polymorphic encryption
+- **Template System** - Extensible security-focused code generation
 
-This is an example Next.js application demonstrating the use of multiple
-features. It is deployed at
-[https://example.arcjet.com](https://example.arcjet.com).
+### π-Engine SaaS
+- **7 Language Support** - Java, Python, C++, C#, Go, Rust, JavaScript
+- **Enterprise Security** - Sandboxed execution, timeout controls
+- **Docker-First** - Containerized deployment ready
+- **Cloud-Native** - Scalable microservice architecture
 
-## Features
+## 🛠️ Quick Start
 
-- [Signup form protection](https://example.arcjet.com/signup) uses Arcjet's
-  server-side email verification configured to block disposable providers and
-  ensure that the domain has a valid MX record. It also includes rate limiting
-  and bot protection to prevent automated abuse.
-- [Bot protection](https://example.arcjet.com/bots) shows how a page can be
-  protected from automated clients.
-- [Rate limiting](https://example.arcjet.com/rate-limiting) shows the use of
-  different rate limit configurations depending on the authenticated user. A
-  logged-in user can make more requests than an anonymous user.
-- [Attack protection](https://example.arcjet.com/attack) demonstrates Arcjet
-  Shield, which detects suspicious behavior, such as SQL injection and
-  cross-site scripting attacks.
-- [Sensitive info](https://example.arcjet.com/sensitive-info) protects against
-  clients sending you sensitive information such as PII that you do not wish to
-  handle.
-
-## Run locally
-
-1. [Register for a free Arcjet account](https://app.arcjet.com).
-
-2. Install dependencies:
-
+### Docker Deployment
 ```bash
-npm ci
+docker build -t saas-security .
+docker run -p 8080:8080 saas-security
 ```
 
-3. Rename `.env.local.example` to `.env.local` and add your Arcjet key. If you
-   want to test the rate limiting authentication, you will also need to add an
-   Auth.js secret and [create a GitHub OAuth
-   app](https://authjs.dev/guides/configuring-github).
-
-4. Start the dev server
-
+### Local Development
 ```bash
-npm run dev
+# Compile π-Engine
+javac src/pi-engine/PiEngine.java
+
+# Run π-Engine
+java -cp src/pi-engine PiEngine
+
+# Install dependencies
+npm install
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+## 🔒 Security Features
 
-## Need help?
+- **Code Sandboxing** - Isolated execution environments
+- **Pattern Detection** - Dangerous code pattern filtering
+- **Resource Limits** - Memory and execution time controls
+- **Template Validation** - Security-focused code generation
 
-Check out [the docs](https://docs.arcjet.com/), [contact
-support](https://docs.arcjet.com/support), or [join our Discord
-server](https://arcjet.com/discord).
+## 📊 Supported Languages
 
-## Stack
+| Language | Compiler/Runtime | Status |
+|----------|------------------|--------|
+| Java | OpenJDK 21 | ✅ |
+| Python | Python 3.x | ✅ |
+| C++ | GCC/G++ | ✅ |
+| C# | .NET 8.0 | ✅ |
+| Go | Go 1.21+ | ✅ |
+| Rust | Rustc | ✅ |
+| JavaScript | Node.js | ✅ |
 
-- Auth: [Auth.js](https://authjs.dev/)
-- App: [Next.js](https://nextjs.org/)
-- Form handling: [React Hook Form](https://react-hook-form.com/) (see also [our
-  full form protection
-  example](https://github.com/arcjet/example-nextjs-form))
-- Client-side validation: [Zod](https://zod.dev/)
-- Security: [Arcjet](https://arcjet.com/)
+## 🏗️ Architecture
 
-## Contributing
+```
+SaaSEncryptionSecurity/
+├── src/
+│   ├── pi-engine/          # Multi-language execution engine
+│   ├── engines/            # Template generation engines
+│   └── utils/              # Utility functions
+├── Dockerfile              # Container deployment
+└── package.json           # Dependencies
+```
 
-All development for Arcjet examples is done in the
-[`arcjet/examples` repository](https://github.com/arcjet/examples).
+## 🚀 Deployment
 
-You are welcome to open an issue here or in
-[`arcjet/examples`](https://github.com/arcjet/examples/issues) directly.
-However, please direct all pull requests to
-[`arcjet/examples`](https://github.com/arcjet/examples/pulls). Take a look at
-our
-[contributing guide](https://github.com/arcjet/examples/blob/main/CONTRIBUTING.md)
-for more information.
+### DigitalOcean App Platform
+```yaml
+name: saas-security
+services:
+- name: pi-engine
+  source_dir: /
+  dockerfile_path: Dockerfile
+  instance_count: 1
+  instance_size_slug: basic-xxs
+```
 
-[vercel_deploy]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farcjet%2Fexample-nextjs&project-name=arcjet-example&repository-name=arcjet-example&developer-id=oac_1GEcKBuKBilVnjToj1QUwdb8&demo-title=Arcjet%20Example%20&demo-description=Example%20rate%20limiting%2C%20bot%20protection%2C%20email%20verification%20%26%20form%20protection.&demo-url=https%3A%2F%2Fgithub.com%2Farcjet%2Fexample-nextjs&demo-image=https%3A%2F%2Fapp.arcjet.com%2Fimg%2Fexample-apps%2Fvercel%2Fdemo-image.jpg&integration-ids=oac_1GEcKBuKBilVnjToj1QUwdb8&external-id=arcjet-js-example◊
-[vercel_button]: https://vercel.com/button
-[netlify_deploy]: https://app.netlify.com/start/deploy?repository=https://github.com/arcjet/example-nextjs
-[netlify_button]: https://www.netlify.com/img/deploy/button.svg
+### Kubernetes
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: saas-security
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: saas-security
+  template:
+    spec:
+      containers:
+      - name: pi-engine
+        image: saas-security:latest
+        ports:
+        - containerPort: 8080
+```
+
+## 📈 Performance
+
+- **Startup Time**: < 2 seconds
+- **Memory Usage**: ~200MB base
+- **Execution Timeout**: 60 seconds max
+- **Concurrent Users**: 100+ supported
+
+## 🔧 Configuration
+
+Environment variables:
+- `TIMEOUT_SECONDS` - Execution timeout (default: 60)
+- `MAX_OUTPUT_BYTES` - Output limit (default: 16384)
+- `WORKSPACE_PATH` - Execution workspace directory
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open Pull Request
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Security research community
+- Multi-language runtime maintainers
+- Container orchestration platforms
+
+---
+
+**SaaS Encryption Security** - Enterprise security templates meet cloud-native code execution.
