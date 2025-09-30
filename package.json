@@ -1,55 +1,32 @@
 {
-  "name": "@arcjet-examples/nextjs",
-  "description": "Arcjet Next.js example app. Arcjet helps developers protect their apps in just a few lines of code. Bot detection. Rate limiting. Email validation. Attack protection. Data redaction. A developer-first approach to security.",
-  "license": "Apache-2.0",
-  "homepage": "https://arcjet.com",
-  "repository": "github:arcjet/example-nextjs",
-  "bugs": {
-    "url": "https://github.com/arcjet/examples/issues",
-    "email": "support@arcjet.com"
-  },
+  "name": "saas-encryption-security",
+  "version": "1.0.0",
+  "description": "SaaS Encryption Security - Advanced security templates and cryptographic tools",
+  "license": "MIT",
+  "homepage": "https://github.com/ItsMehRAWRXD/SaaSEncryptionSecurity",
+  "repository": "github:ItsMehRAWRXD/SaaSEncryptionSecurity",
   "author": {
-    "name": "Arcjet",
-    "email": "support@arcjet.com",
-    "url": "https://arcjet.com"
+    "name": "ItsMehRAWRXD",
+    "url": "https://github.com/ItsMehRAWRXD"
   },
-  "private": true,
+  "private": false,
   "engines": {
-    "node": ">=20"
+    "node": ">=18"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "test:open": "playwright test --ui-host=0.0.0.0",
-    "test:run": "playwright test"
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
-    "@arcjet/decorate": "1.0.0-beta.9",
-    "@arcjet/env": "1.0.0-beta.9",
-    "@arcjet/ip": "1.0.0-beta.9",
-    "@arcjet/next": "1.0.0-beta.9",
-    "@fontsource-variable/figtree": "5.2.8",
-    "@fontsource/ibm-plex-mono": "5.2.6",
-    "@hookform/resolvers": "5.1.1",
-    "@nosecone/next": "1.0.0-beta.9",
-    "@oddbird/css-anchor-positioning": "0.6.1",
-    "next": "15.5.2",
-    "next-auth": "5.0.0-beta.29",
-    "next-themes": "0.4.6",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-hook-form": "7.60.0",
-    "zod": "3.25.76"
+    "crypto": "^1.0.1"
   },
-  "devDependencies": {
-    "@playwright/test": "1.54.1",
-    "@types/node": "22.16.3",
-    "@types/react": "19.1.8",
-    "@types/react-dom": "19.1.6",
-    "sass": "1.89.2",
-    "typescript": "5.8.3"
-  }
+  "devDependencies": {},
+  "keywords": [
+    "security",
+    "encryption",
+    "saas",
+    "cryptography",
+    "templates"
+  ]
 }
