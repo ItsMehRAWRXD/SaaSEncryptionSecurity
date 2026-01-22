@@ -19,7 +19,7 @@
     "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
-    "@nosecone/next": "1.0.0-beta.10",
+    "@nosecone/next": "1.0.0",
     "crypto": "^1.0.1"
   },
   "devDependencies": {},
